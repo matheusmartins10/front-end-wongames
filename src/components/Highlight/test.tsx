@@ -4,26 +4,34 @@ import { renderWithTheme } from 'utils/tests/helpers'
 import Highlight from '.'
 
 const props = {
-  title: 'Read Dead it’s back',
-  subtitle: 'Come see John’s new adventures',
+  title: 'Heading 1',
+  subtitle: 'Heading 2',
+  backgroundImage: '/img/red-dead-img.jpg',
   buttonLabel: 'Buy now',
   buttonLink: '/rdr2'
 }
 
 describe('<Highlight />', () => {
-  it('should render the title', () => {
+  it('should render headings and button', () => {
     renderWithTheme(<Highlight {...props} />)
 
     expect(
-      screen.getByRole('heading', { name: /Read Dead it’s back/i })
+      screen.getByRole('heading', { name: /heading 1/i })
     ).toBeInTheDocument()
+
+    expect(
+      screen.getByRole('heading', { name: /heading 2/i })
+    ).toBeInTheDocument()
+
+    expect(screen.getByRole('link', { name: /buy now/i })).toBeInTheDocument()
   })
 
-  it('should render the subtitle', () => {
-    renderWithTheme(<Highlight {...props} />)
+  it('should render float image', () => {
+    renderWithTheme(<Highlight {...props} floatImage="/float-image.png" />)
 
-    expect(
-      screen.getByRole('heading', { name: /Come see John’s new adventures/i })
-    ).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: props.title })).toHaveAttribute(
+      'src',
+      '/float-image.png'
+    )
   })
 })
