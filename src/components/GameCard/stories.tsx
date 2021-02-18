@@ -8,7 +8,13 @@ export default {
     title: 'GameCard',
     developer: 'Rockstar Games',
     img: 'https://source.unsplash.com/user/willianjusten/300x140',
-    price: 'R$ 235,00'
+    price: 'R$ 235,00',
+    promotionalPrice: 'R$ 200,00'
+  },
+  parameters: {
+    background: {
+      default: 'dark'
+    }
   }
 } as Meta
 
