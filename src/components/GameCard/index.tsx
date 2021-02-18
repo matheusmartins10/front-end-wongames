@@ -15,10 +15,10 @@ export type GameCardProps = {
   price: string
   promotionalPrice?: string
   favorite?: boolean
-  onFav?: () => void
   ribbon: React.ReactNode
   ribbonColor: RibbonColors
   ribbonSize: RibbonSizes
+  onFav?: () => void
 }
 
 const GameCard = ({
@@ -28,10 +28,10 @@ const GameCard = ({
   price,
   promotionalPrice,
   favorite = false,
-  onFav,
   ribbon,
   ribbonColor = 'primary',
-  ribbonSize = 'small'
+  ribbonSize = 'small',
+  onFav
 }: GameCardProps) => (
   <S.Wrapper>
     {!!ribbon && (
