@@ -1,23 +1,23 @@
-import * as S from './styles'
+import * as S from "./styles"
 
-export type LineColors = 'primary' | 'secondary'
+export type LineColors = "primary" | "secondary"
 
 export type HeadingProps = {
   children: React.ReactNode
-  color?: 'white' | 'black'
+  color?: "white" | "black"
   lineLeft?: boolean
   lineBottom?: boolean
   lineColor?: LineColors
-  size?: 'small' | 'medium'
+  size?: "small" | "medium"
 }
 
 const Heading = ({
   children,
-  color = 'white',
+  color = "white",
   lineLeft = false,
   lineBottom = false,
-  lineColor = 'primary',
-  size = 'medium'
+  lineColor = "primary",
+  size = "medium"
 }: HeadingProps) => (
   <S.Wrapper
     color={color}

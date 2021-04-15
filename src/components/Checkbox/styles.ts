@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
-import { CheckboxProps } from '.'
+import styled, { css } from "styled-components"
+import { CheckboxProps } from "."
 
 export const Wrapper = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ export const Input = styled.input`
     position: relative;
     outline: none;
     &:before {
-      content: '';
+      content: "";
       width: 0.6rem;
       height: 0.9rem;
       border: 0.2rem solid ${theme.colors.white};
@@ -45,7 +45,7 @@ export const Input = styled.input`
   `}
 `
 
-export const Label = styled.label<Pick<CheckboxProps, 'labelColor'>>`
+export const Label = styled.label<Pick<CheckboxProps, "labelColor">>`
   ${({ theme, labelColor }) => css`
     cursor: pointer;
     padding-left: ${theme.spacings.xxsmall};

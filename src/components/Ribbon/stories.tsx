@@ -1,15 +1,15 @@
-import { Story, Meta } from '@storybook/react/types-6-0'
-import Ribbon, { RibbonProps } from '.'
+import { Story, Meta } from "@storybook/react/types-6-0"
+import Ribbon, { RibbonProps } from "."
 
 export default {
-  title: 'Ribbon',
+  title: "Ribbon",
   component: Ribbon,
   args: {
-    children: 'Best Seller'
+    children: "Best Seller"
   },
   argTypes: {
     children: {
-      type: 'string'
+      type: "string"
     }
   }
 } as Meta
@@ -17,10 +17,10 @@ export default {
 export const Default: Story<RibbonProps> = (args) => (
   <div
     style={{
-      width: '40rem',
-      height: '25rem',
-      position: 'relative',
-      backgroundColor: '#888'
+      width: "40rem",
+      height: "25rem",
+      position: "relative",
+      backgroundColor: "#888"
     }}
   >
     <Ribbon {...args} />

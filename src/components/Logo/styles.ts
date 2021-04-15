@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import styled, { css } from "styled-components"
+import media from "styled-media-query"
 
-import { LogoProps } from '.'
+import { LogoProps } from "."
 
 const wrapperModifiers = {
   normal: () => css`
@@ -13,7 +13,7 @@ const wrapperModifiers = {
     height: 5.9rem;
   `,
   hideOnMobile: () => css`
-    ${media.lessThan('medium')`
+    ${media.lessThan("medium")`
       width: 5.8rem;
       height: 4.5rem;
       svg {

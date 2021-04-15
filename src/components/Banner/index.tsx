@@ -1,6 +1,6 @@
-import * as S from './styles'
-import Button from 'components/Button'
-import Ribbon, { RibbonSizes, RibbonColors } from 'components/Ribbon'
+import * as S from "./styles"
+import Button from "components/Button"
+import Ribbon, { RibbonSizes, RibbonColors } from "components/Ribbon"
 
 export type BannerProps = {
   img: string
@@ -20,8 +20,8 @@ const Banner = ({
   buttonLabel,
   buttonLink,
   ribbon,
-  ribbonColor = 'primary',
-  ribbonSize = 'normal'
+  ribbonColor = "primary",
+  ribbonSize = "normal"
 }: BannerProps) => (
   <S.Wrapper>
     {!!ribbon && (

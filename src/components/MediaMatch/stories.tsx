@@ -1,7 +1,7 @@
-import { Story, Meta } from '@storybook/react/types-6-0'
-import MediaMatch from '.'
+import { Story, Meta } from "@storybook/react/types-6-0"
+import MediaMatch from "."
 export default {
-  title: 'MediaMatch',
+  title: "MediaMatch",
   component: MediaMatch
 } as Meta
 export const Desktop: Story = () => (
@@ -12,6 +12,6 @@ export const Mobile: Story = () => (
 )
 Mobile.parameters = {
   viewport: {
-    defaultViewport: 'mobile1'
+    defaultViewport: "mobile1"
   }
 }

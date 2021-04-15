@@ -1,9 +1,9 @@
-import theme from 'styles/theme'
-import { renderWithTheme } from 'utils/tests/helpers'
-import { Container } from '.'
+import theme from "styles/theme"
+import { renderWithTheme } from "utils/tests/helpers"
+import { Container } from "."
 
-describe('<Container />', () => {
-  it('should render the heading', () => {
+describe("<Container />", () => {
+  it("should render the heading", () => {
     const { container } = renderWithTheme(
       <Container>
         <span>Won Games</span>
@@ -11,7 +11,7 @@ describe('<Container />', () => {
     )
 
     expect(container.firstChild).toHaveStyleRule(
-      'max-width',
+      "max-width",
       theme.grid.container
     )
 

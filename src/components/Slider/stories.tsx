@@ -1,11 +1,11 @@
-import { Story, Meta } from '@storybook/react/types-6-0'
-import styled from 'styled-components'
-import { Settings } from 'react-slick'
+import { Story, Meta } from "@storybook/react/types-6-0"
+import styled from "styled-components"
+import { Settings } from "react-slick"
 
-import Slider from '.'
+import Slider from "."
 
 export default {
-  title: 'Slider',
+  title: "Slider",
   component: Slider
 } as Meta
 

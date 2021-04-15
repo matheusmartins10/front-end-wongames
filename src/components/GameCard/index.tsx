@@ -2,11 +2,11 @@ import {
   AddShoppingCart,
   FavoriteBorder,
   Favorite
-} from '@styled-icons/material-outlined'
+} from "@styled-icons/material-outlined"
 
-import * as S from './styles'
-import Button from 'components/Button'
-import Ribbon, { RibbonColors, RibbonSizes } from 'components/Ribbon'
+import * as S from "./styles"
+import Button from "components/Button"
+import Ribbon, { RibbonColors, RibbonSizes } from "components/Ribbon"
 
 export type GameCardProps = {
   title: string
@@ -29,8 +29,8 @@ const GameCard = ({
   promotionalPrice,
   favorite = false,
   ribbon,
-  ribbonColor = 'primary',
-  ribbonSize = 'small',
+  ribbonColor = "primary",
+  ribbonSize = "small",
   onFav
 }: GameCardProps) => (
   <S.Wrapper>

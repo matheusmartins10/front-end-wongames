@@ -3,7 +3,7 @@ import {
   css,
   DefaultTheme,
   GlobalStyleComponent
-} from 'styled-components'
+} from "styled-components"
 
 type GlobalStylesProps = {
   removeBg?: boolean
