@@ -1,12 +1,12 @@
-import { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react"
-import * as S from "./styles"
+import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
+import * as S from './styles'
 
 type ButtonTypes =
   | AnchorHTMLAttributes<HTMLAnchorElement>
   | ButtonHTMLAttributes<HTMLButtonElement>
 
 export type ButtonProps = {
-  size?: "small" | "medium" | "large"
+  size?: 'small' | 'medium' | 'large'
   fullWidth?: boolean
   minimal?: boolean
   icon?: JSX.Element
@@ -16,7 +16,7 @@ export type ButtonProps = {
 const Button = ({
   children,
   icon,
-  size = "medium",
+  size = 'medium',
   fullWidth = false,
   minimal = false,
   ...props
