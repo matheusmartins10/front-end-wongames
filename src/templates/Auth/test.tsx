@@ -1,6 +1,8 @@
 import { screen } from '@testing-library/react'
 import { renderWithTheme } from 'utils/tests/helpers'
 
+import Logo from 'components/Logo'
+
 import Auth from '.'
 
 describe('<Auth />', () => {
@@ -32,5 +34,11 @@ describe('<Auth />', () => {
     ).toBeInTheDocument()
 
     expect(screen.getByRole('textbox')).toBeInTheDocument()
+  })
+
+  it('should render the logo with id passed', () => {
+    const { container } = renderWithTheme(<Logo id="myId" />)
+
+    expect(container.querySelector('#paint_linear_myId')).toBeInTheDocument()
   })
 })
