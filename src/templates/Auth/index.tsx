@@ -12,10 +12,12 @@ const Auth = ({ title, children }: AuthProps) => (
     <S.BannerBlock>
       <S.BannerContent>
         <Logo />
-        <Heading> All your favorite games in one place </Heading>
-        <S.Subtitle>
-          <strong>WON</strong> is the best and most complete gaming platform.
-        </S.Subtitle>
+        <div>
+          <Heading> All your favorite games in one place </Heading>
+          <S.Subtitle>
+            <strong>WON</strong> is the best and most complete gaming platform.
+          </S.Subtitle>
+        </div>
         <S.Footer>Won Games 2020 © Todos os Direitos Reservados</S.Footer>
       </S.BannerContent>
     </S.BannerBlock>
