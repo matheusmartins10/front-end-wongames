@@ -6,7 +6,7 @@ import TextField from 'components/TextField'
 
 describe('<FormSignIn />', () => {
   it('should render the form', () => {
-    renderWithTheme(<FormSignIn />)
+    const { container } = renderWithTheme(<FormSignIn />)
     // verifique email
     expect(screen.getByPlaceholderText(/email/i)).toBeInTheDocument()
     // verifique password
@@ -15,6 +15,8 @@ describe('<FormSignIn />', () => {
     expect(
       screen.getByRole('button', { name: /sign in now/i })
     ).toBeInTheDocument()
+
+    expect(container.parentElement).toMatchSnapshot()
   })
 
   it('should render the forgot password link', () => {
