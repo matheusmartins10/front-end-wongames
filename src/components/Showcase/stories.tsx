@@ -15,7 +15,7 @@ export default {
   ],
   parameters: {
     layout: 'fullscreen',
-    background: {
+    backgrounds: {
       default: 'won-dark'
     }
   }
@@ -38,11 +38,11 @@ WithoutHighlight.args = {
   games: gamesMock
 }
 
-export const WithoutGame: Story<ShowcaseProps> = (args) => (
+export const WithoutGames: Story<ShowcaseProps> = (args) => (
   <Showcase {...args} />
 )
 
-WithoutGame.args = {
+WithoutGames.args = {
   title: 'Most Popular',
   highlight: highlightMock
 }
