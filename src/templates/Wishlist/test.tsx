@@ -9,7 +9,8 @@ import highlightMock from 'components/Highlight/mock'
 
 const props = {
   recommendedHighlight: highlightMock,
-  recommendedGames: gamesMock
+  recommendedGames: gamesMock,
+  games: gamesMock
 }
 
 jest.mock('components/Showcase', () => ({
@@ -27,5 +28,7 @@ describe('<Wishlist />', () => {
       screen.getByRole('heading', { name: /wishlist/i })
     ).toBeInTheDocument()
     expect(screen.getByTestId('Mock Showcase')).toBeInTheDocument()
+
+    expect(screen.getAllByText(/population zero/i)).toHaveLength(6)
   })
 })
