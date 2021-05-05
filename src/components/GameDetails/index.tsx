@@ -11,6 +11,7 @@ type Platform = 'linux' | 'windows' | 'mac'
 export type GameDetailsProps = {
   developer: string
   platforms: Platform[]
+  publisher: string
   genres: string[]
   releaseDate: string
   rating: Rating
@@ -18,6 +19,7 @@ export type GameDetailsProps = {
 
 const GameDetails = ({
   platforms,
+  publisher,
   developer,
   genres,
   releaseDate,
@@ -65,7 +67,7 @@ const GameDetails = ({
 
         <S.Block>
           <S.Label>Publisher</S.Label>
-          <S.Description>2K</S.Description>
+          <S.Description> {publisher} </S.Description>
         </S.Block>
 
         <S.Block>
