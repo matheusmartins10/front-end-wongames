@@ -24,7 +24,15 @@ describe('<GameItem />', () => {
     ).toBeInTheDocument()
 
     expect(screen.getByText(/r\$ 199,99/i)).toBeInTheDocument()
+  })
 
-    screen.logTestingPlaygroundURL()
+  it('should render with  download link', () => {
+    const downloadLink = 'https://link'
+
+    renderWithTheme(<GameItem {...props} downloadLink={downloadLink} />)
+
+    expect(
+      screen.getByRole('link', { name: `Get ${props.title} here` })
+    ).toHaveAttribute('href', downloadLink)
   })
 })

@@ -13,3 +13,11 @@ Default.args = {
   title: 'Red Dead',
   price: 'R$ 199,99'
 }
+
+export const WithPayment: Story<GameItemProps> = (args) => (
+  <GameItem {...args} />
+)
+
+WithPayment.args = {
+  downloadLink: 'https://wongames.com/game/download/21312ndasd'
+}
