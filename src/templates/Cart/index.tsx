@@ -45,6 +45,7 @@ const Cart = ({
             hasLink
           />
         )}
+        <Divider />
       </Container>
       <Showcase
         title="You may like these games"
