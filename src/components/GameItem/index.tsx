@@ -1,4 +1,5 @@
-import { Download } from '@styled-icons/boxicons-solid'
+import { Download } from '@styled-icons/boxicons-solid/Download'
+
 import * as S from './styles'
 
 export type PaymentInfoProps = {
@@ -38,13 +39,14 @@ const GameItem = ({
               target="_blank"
               aria-label={`Get ${title} here`}
             >
-              <Download />
+              <Download size={22} />
             </S.DownloadLink>
           )}
         </S.Title>
         <S.Price>{price}</S.Price>
       </S.Content>
     </S.GameContent>
+
     {!!paymentInfo && (
       <S.PaymentContent>
         <p>{paymentInfo.purchaseDate}</p>
